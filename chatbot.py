@@ -5,7 +5,7 @@ from langchain_groq import ChatGroq
 
 # load the env variables
 load_dotenv()
-api_key=os.getenv("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")
+GROQ_API_KEY=st.secrets("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")
 # streamlit page setup
 st.set_page_config(
     page_title="Chatbot",
@@ -44,4 +44,5 @@ if user_prompt:
 
     with st.chat_message("assistant"):
         st.markdown(assistant_response)
+
 
