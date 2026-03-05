@@ -3,6 +3,7 @@ import streamlit as st
 from langchain_groq import ChatGroq
 
 
+
 # load the env variables
 load_dotenv()
 
@@ -44,6 +45,7 @@ if user_prompt:
 
     with st.chat_message("assistant"):
         st.markdown(assistant_response)
+
 
 
 
